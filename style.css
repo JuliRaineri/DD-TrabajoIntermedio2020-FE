@@ -19,12 +19,21 @@ a{
     text-decoration: none;
 }
 
+svg{
+  filter: invert(1);
+}
+
+p svg{
+  filter: none;
+}
+
 .menu{
   display: flex;
   justify-content: space-between;
   margin: 1rem;
   width: 320px;
   height: 64px;
+  background-color: black;
   
 }
 
