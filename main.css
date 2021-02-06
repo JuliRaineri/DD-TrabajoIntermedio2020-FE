@@ -1,2 +1,14 @@
-@import "style.css";
-@import "hovers.css";
+@import "clases y componentes.css";
+@import "estetica y hovers.css";
+@import "botones.css";
+@import "componente main.css";
+@import "desktop.css";
+
+:root {
+    --hover-celeste: #0366d6;
+    --header-oscuro: #24292e;
+    --fuente-gral: "Segoe UI" , sans-serif ;
+    --font-size: 15px;
+    --breakpoint-desktop: 768px;
+}
+

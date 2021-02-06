@@ -1,0 +1,52 @@
+
+  /* hovers main primera  seccion */
+
+.boton-repositorio a:hover {
+    text-decoration: underline;
+  }
+
+  .estadisticas  span:hover  {
+    color: var(--hover-celeste) ;
+ }
+
+ /* botones */
+
+ /* clases para botones 
+ variables ( color , comportamiento) */
+
+ .boton-repositorio {
+  display: flex;
+  justify-content: flex-start;
+  margin: 2.2rem;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+/* primera  seccion link de repositorio */
+.boton-repositorio svg{
+   filter: none;
+}
+
+/* segunda seccion  estadisticas */
+.estadisticas{
+   display: block;
+   padding-right: 16px;
+   padding-left: 17px;
+}
+.boton-estadisticas{
+  display: inline-block;
+  margin: 1rem; 
+  margin-bottom: 16px;
+  font-size: var(--font-size);
+  line-height: 21px;
+  font-weight: 400;
+}
+
+/* tercera seccion botones estadisticas y watch */
+
+.botones-accion-watch{
+  display: flex;
+}
+
+.boton-star{
+  
+} 
