@@ -9,6 +9,8 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: Segoe UI;
+    font-size: 14px;
+    line-height: 1.5;
     
 }
 
@@ -29,7 +31,7 @@ header svg{
   align-items: center;
   margin: 1rem;
   padding: 1rem;
-  width: 360px;
+  width: 320px;
   height: 64px;
   background-color:#24292e;
   
@@ -39,27 +41,24 @@ header svg{
   display: flex;
   justify-content: flex-start;
   margin: 2.2rem;
+  margin-bottom: 1rem;
   font-size: 1.1rem;
 }
 
 .boton-repositorio svg{
    filter: none;
 }
-.boton-repositorio a:hover {
-  text-decoration: underline;
-}
 
+.estadisticas{
+   display: block;
+   padding-right: 16px;
+   padding-left: 17px;
+}
 .boton-estadisticas{
-  display: flex;
-   align-items: flex-start;
-  justify-content: space-between;
-  margin: 1rem;
-  padding: 0.1rem;
-  font-size: 14px;
+  display: inline-block;
+margin: 1rem; 
+margin-bottom: 16px;
+ font-size: 16px;
   line-height: 21px;
-  font-weight: 600;
-}
-
-.boton-estadisticas  a:hover  {
-   color:#0366d6 ;
+  font-weight: 400;
 }

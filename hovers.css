@@ -1,0 +1,10 @@
+
+  /* hovers main primera  seccion */
+
+.boton-repositorio a:hover {
+    text-decoration: underline;
+  }
+
+  .estadisticas  span:hover  {
+    color:#0366d6 ;
+ }
