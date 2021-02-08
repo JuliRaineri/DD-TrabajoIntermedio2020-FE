@@ -1,8 +1,8 @@
-@import "clases y componentes.css";
-@import "estetica y hovers.css";
+@import "mobile.css";
 @import "botones.css";
 @import "componente main.css";
-@import "desktop.css";
+
+
 
 :root {
     --hover-celeste: #0366d6;
