@@ -16,6 +16,11 @@ html, body {
     
 }
 
+body{
+  display: flex;
+  flex-direction: column;
+
+}
 ul { 
     list-style: none;
 }
@@ -26,16 +31,49 @@ a{
 header svg{
   filter: invert(1);
 }
+
+li{
+  margin: 0 1px;
+  height: 20px;
+  color: #70757a;
+
+
+}
    /* header */
 .menu{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 1rem;
+  margin: 0rem;
   padding: 1rem;
-  width: 320px;
+  width: 375px;
   height: 64px;
   background-color: var(--header-oscuro);
   
 }
 
+.boton-herramientas{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  width: 300px;
+  margin: 1.5rem;
+}
+
+.SelectMenu-icon{
+  display: flex;
+  flex-direction: column;
+padding: 16px;
+flex: none;
+align-items: center;
+border-bottom: 1px solid
+}
+footer{
+  border-top: 1px solid #dadce0;
+  padding-top: 5px;
+  margin-left: -10px;
+  line-height: 20px;
+  text-align: center;
+  background: #f2f2f2;   
+}

@@ -8,7 +8,8 @@
     --hover-celeste: #0366d6;
     --header-oscuro: #24292e;
     --fuente-gral: "Segoe UI" , sans-serif ;
-    --font-size: 15px;
+    --font-size: 14px;
+    --border-color: rgba(62, 68, 74, 0.15);
     --breakpoint-desktop: 768px;
 }
 
