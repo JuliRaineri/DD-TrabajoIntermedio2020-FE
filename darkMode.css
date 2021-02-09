@@ -1,4 +1,4 @@
-body {
+html body {
     filter: invert(1);
     color: black;
 }

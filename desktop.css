@@ -1,0 +1,14 @@
+@media only screen and (min-width: 770px) {
+
+  .desktop-main-view{
+      display: flex;
+  }
+  .desktop-leftside{
+      width: 80%;
+      padding: 1rem 0 1rem 1rem;
+  }
+  .desktop-rightside{
+      padding-right:1rem;
+  }
+
+  
