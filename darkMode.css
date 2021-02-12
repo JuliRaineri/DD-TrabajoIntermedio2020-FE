@@ -1,10 +1,8 @@
-html body {
+body {
     filter: invert(1);
-    color: black;
+    
 }
 
-p{filter: invert(1);}
-
-article{
+footer{
     filter: invert(1);
 }
