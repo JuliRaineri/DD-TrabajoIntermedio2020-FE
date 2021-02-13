@@ -17,19 +17,13 @@
   header{
       display: flex;
       align-items: center;
-      width: 100%;
-
-      
+      width: 100%;      
   }
  /* search and form */
 .search{
     display: flex;
 }
 
- form{
-         
-     
- }
  input{
      min-height: 28px;
      background-color: var(--header-oscuro);
@@ -48,6 +42,10 @@
     flex-wrap: nowrap;
     padding: 10px;
 }
+
+.boton-repositorio{
+    font-size: 20px;
+}
  
  /* herramientas header desktop */
 
@@ -65,7 +63,46 @@
      justify-content: flex-end;
      width: 100%;
  }
+
+ .code{
+     background-color: #2EA44F;
+     color: #ffff;
+ }
+
+
+/* star */
+.boton-comun-desktop-1 {
+    position: absolute;
+    right: 200px;
+    top: 90px;
+    border-radius: 8px;
+    padding: 7px 12px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    
 }
+/* watch */
+.boton-comun-desktop-2 {
+    position: absolute;
+    top: 90px;
+    right: 360px;
+    border-radius: 8px;
+}
+
+/* fork */
+
+.boton-comun-desktop-3 {
+    position: absolute;
+    right: 35px;
+    top: 90px;
+    border-radius: 8px;
+    padding: 7px 12px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+  }
 
 @media (max-width: 770px){
 
