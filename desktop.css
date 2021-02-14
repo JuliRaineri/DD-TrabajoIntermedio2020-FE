@@ -12,16 +12,21 @@
   }
 
   header svg{
-      margin-left: 40px;
+      margin-left: 10px;
+      
   }
   header{
-      display: flex;
-      align-items: center;
+      display: flex; 
       width: 100%;      
+  }
+
+  img{
+      border-radius: 50%;
   }
  /* search and form */
 .search{
     display: flex;
+    margin-right: 40px;
 }
 
  input{
@@ -37,10 +42,8 @@
 
  }
 
- li{
-    display: flex;
-    flex-wrap: nowrap;
-    padding: 10px;
+ li{ padding: 5px;
+    margin-right: 5px;
 }
 
 .boton-repositorio{
@@ -51,13 +54,15 @@
 
  .herramientas{
      display: flex;
-     justify-content: space-between;  
-     font-weight: 600;
-     color: rgb(223, 212, 210);
-     filter: invert(100%);
+     justify-content: space-around;  
+     font-weight: 400;
      font-size: 18px;
+     filter: invert(1);
  }
 
+ .herramientas .hide-mobile{
+     margin-left: 10px;
+ }
  .boton-desplegable{
      display: flex;
      justify-content: flex-end;
@@ -102,6 +107,23 @@
     justify-content:center;
     align-items: center;
 }
+
+.container-branch{
+    display: flex;
+    flex-direction: column;
+    background-color: #fafbfc;
+    border-radius: 6px;
+  }
+ .main-options-buttons{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    
+    
+    
+    
+  }
+
   }
 
 @media (max-width: 770px){
