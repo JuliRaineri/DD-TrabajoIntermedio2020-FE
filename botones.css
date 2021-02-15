@@ -90,7 +90,7 @@ box-shadow: none;
     border:1px solid rgba(27, 31, 35, 0.15);
     border-radius: 6px;
     background: #FAFBFC;
-    padding: 7px 12px;
+    padding: 3px 12px;
     display: flex;
     justify-content:center;
     align-items: center;  
@@ -106,8 +106,8 @@ box-shadow: none;
     padding: 16px;
     font-size: 14px;
     line-height: 30px;
-    list-style: none;
   }
+
   
 
 .more-options{
@@ -122,7 +122,12 @@ box-shadow: none;
     margin-left: 5px;
     padding: 5px;  
   }
-
+  button .boton p{
+    position: absolute;
+    right: 10px;
+    background-color: blueviolet;
+    
+  }
   
 
   .boton-herramientas .code-style {
@@ -148,8 +153,7 @@ box-shadow: none;
 
 .boton-repositorio a:hover {
     text-decoration: underline;
-    color: var(--hover-celeste) ;
-    
+    color: var(--hover-celeste) ;   
   }
 
   .estadisticas span:hover  {
@@ -163,7 +167,7 @@ box-shadow: none;
   margin-bottom: 0.5rem;
   margin-top: 10px;
   font-size: 18px;
-  line-height: 1.5;
+  line-height: 10px;
 }
 /* primera  seccion link de repositorio */
 .boton-repositorio svg{
@@ -182,14 +186,6 @@ box-shadow: none;
   font-size: 14px;
   font-weight: 400;
 }
-/* segunda seccion  estadisticas */
-.estadisticas{
-   display: block;
-   padding-left: 1.5px;
-   
-   
-}
-
 
 /* tercera seccion botones estadisticas y watch */
 
@@ -278,14 +274,107 @@ list-style: none;
 
 
 
-footer{
+  .usuario-container{
     display: flex;
-  align-self: auto;  justify-content: center;
-    margin-top: 0.5rem;
-    padding: 1rem;
-    border-top: 1px solid #dadce0;
-    width: 375px;
-    height: 159px;
-    line-height: 21px;
+    flex-direction: row;
+    
+    margin: -1px -1px 0;
+    padding: 16px;
+    justify-content: space-between;
+    background-color: #f1f8f1ff ;
+    border-radius:6px;
+    border: solid 1px #e1e4e8 ;
   }
+.view-code{
+  display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: -1px -1px 0;
+    padding: 16px;
+    justify-content: center;
+    border-radius:6px;
+    border: solid 1px #e1e4e8 ;
+    color: #0366d6;
 
+}
+
+.readme-section{
+  
+  padding: 1rem;
+ border-top: 1px solid #e1e4e8;
+    border-bottom: 1px solid #e1e4e8;
+}
+  
+.readme-tittle{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 100;
+}
+.readme-description{
+  padding: 1rem 2rem;
+}
+
+.readme-content{
+  border-bottom: 1px solid #e1e4e8;
+    padding-bottom:1rem;
+    font-size:32px;
+    margin:0;
+}
+.readme-description:hover svg{
+  cursor: pointer;
+  display: none;
+}
+
+
+.about{
+  padding:1rem;
+}
+.about-sections{
+  border-bottom: 1px solid #e1e4e8;
+  padding:1.5rem 0;
+}
+.about-sections h2, h2>a{
+  font-size:16px;
+  color: var(--black);
+}
+.about-sections p{
+  margin:0;
+}
+.about-sections h2{
+  margin-bottom: 1rem;
+  margin: 0;
+}
+.progress-bar{
+  display: flex;
+  justify-content:space-between;
+  border-radius: 10px;
+  margin: 1rem;
+  
+}
+.progress-bar-1{ 
+  background: orangered;
+  border-radius: 10px 0px 0px 10px;
+  padding: .2rem;
+  width:78%;
+}
+.progress-bar-2{ 
+  background: purple;
+  border-radius: 0px 10px 10px 0px;
+  padding: .2rem;
+  width:22%;
+  margin-right: 3rem;
+}
+footer{
+  
+}
+
+footer ul li{
+  display: flex;
+  margin-top: 1rem;
+  padding: 20px;
+  border-top: 1px solid #dadce0;
+  line-height: 21px;
+}

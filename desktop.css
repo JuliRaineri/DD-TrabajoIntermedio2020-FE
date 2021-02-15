@@ -60,6 +60,17 @@
      filter: invert(1);
  }
 
+ .boton-herramientas-desktop{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     padding-right: 24px;
+     padding-left: 24px;
+     background-color: #fafbfc;
+     box-shadow: inset 0 -1px 0 #eaecef;
+ }
+
+
  .herramientas .hide-mobile{
      margin-left: 10px;
  }
@@ -117,13 +128,44 @@
  .main-options-buttons{
     position: absolute;
     display: flex;
-    justify-content: space-between;
-    
-    
-    
-    
+    justify-content: space-between;   
   }
 
+  .readme-section{
+    border-radius:10px;
+    border: 1px solid #e1e4e8;
+    margin: 1rem;
+    padding:1rem;
+   
+}
+
+.about-section-desktop{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;  
+    padding-bottom: 2rem;   
+}
+.about-section-desktop {
+    position: absolute;
+    right: 10px;
+    top: 250px;
+    
+}
+
+  .about-desktop{
+      padding-right: 1rem;
+  }
+
+.octicon-footer{
+    display:flex;
+} 
+
+
+footer ul li{
+    margin: 0 1rem;
+    
+}
   }
 
 @media (max-width: 770px){
