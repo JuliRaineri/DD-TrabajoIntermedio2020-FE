@@ -13,7 +13,7 @@
       padding: 0;
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
       
-      background-color: white;
+      background-color: #fff;
       
   }
   
@@ -236,17 +236,51 @@ background-color: #fafbfc;
 
 }
 
+/* botones header y herramientas */
 
-.apps-herramientas{
-  display: none;
+.dropdown{
+  display: inline-block ;
+  position: relative;
+}
+
+.dropdown button{
+  border:1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  background-color: #FAFBFC;
+  padding: 7px;
+  cursor: pointer;
+}
+
+
+
+.dropdown div{
+  background-color: #fff;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2) ;
+  z-index: 1;
+  visibility: visible;
   position: absolute;
-  background-color: white;
-  height: 328px;
-  width: 348px;
-  border: 1px solid black;
-  left: 0;
-  overflow: auto;
+  min-width: 100%;
+  opacity: 0;
   
+}
+
+
+.dropdown:hover svg{
+  visibility: hidden;
+  opacity: 1;
+}
+
+.dropdown div a{
+   display: block;
+   text-decoration: none;
+   padding: 8px;   
+   transition: 1s ;
+   white-space: nowrap;    
+}
+
+.dropdown div a:hover{
+   background-color: var(--hover-celeste);
+   
 }
 
 .boton-dropdown{
@@ -258,38 +292,49 @@ background-color: #fafbfc;
 
 .boton-dropdown:focus{
   border-radius: 6px;
-  background-color: white;
+  background-color: #f3f4f6;
 }
 
-.boton-dropdown:focus + .apps-herramientas{
+.boton-dropdown:hover{
+  border-color: rgba(27, 31, 35, 0.15) ;
+}
+
+.watch-content{
+  display: none;
+  position: absolute;
+  border: 1px solid #000; 
+  font-size: 14px;
+border-color: rgba(62, 68, 74, 0.15);
+
+}
+
+.boton-dropdown:focus + .watch-content{
    display: block;
 }
 
-.apps-herramientas ul{
+.watch-content ul{
   display: grid;
-  grid-template-columns:  1fr 1fr 1fr;
-row-gap: 20px;   
-column-gap: 10px;
-list-style: none;
-  
-  
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  list-style: none;
+  margin: 0;
+padding: 0;
+
 }
 
-.apps-herramientas ul li {
+.watch-content ul li {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 50px;
-  margin-top: 30px;
-  margin-right: 30px;
-}
-.apps-herramientas ul li img{
-  width: 48px;
-  height: 48px;
-  display: block;
+  justify-content: space-between;
+  text-align: left;
+  
+  border-bottom: solid 1px salmon;
+} 
+
+.watch-content li{
+  background-color: #5a32a3;
 
 }
+
 
   .usuario-container{
     display: flex;
@@ -302,6 +347,7 @@ list-style: none;
     border-radius:6px;
     border: solid 1px #e1e4e8 ;
   }
+
 .view-code{
   display: flex;
     flex-direction: row;
@@ -371,13 +417,13 @@ list-style: none;
   
 }
 .progress-bar-1{ 
-  background: orangered;
+  background:#e36209;
   border-radius: 10px 0px 0px 10px;
   padding: .2rem;
   width:78%;
 }
 .progress-bar-2{ 
-  background: purple;
+  background: #5a32a3;
   border-radius: 0px 10px 10px 0px;
   padding: .2rem;
   width:22%;

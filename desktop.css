@@ -64,12 +64,18 @@
      display: flex;
      flex-direction: row;
      justify-content: space-between;
-     padding-right: 24px;
-     padding-left: 24px;
+     padding: 12px 24px 0 24px;
      background-color: #fafbfc;
      box-shadow: inset 0 -1px 0 #eaecef;
  }
 
+ .boton-herramientas-desktop span{
+    display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     padding: 2px 20px 2px 20px;
+     margin-top: -35px;
+ }
 
  .herramientas .hide-mobile{
      margin-left: 10px;
@@ -94,8 +100,17 @@
 
  .boton-main-desktop{
     position: absolute;
-    left: 150px;
+    left: 160px;
     bottom: 276px;
+ }
+
+ .boton-main{
+    padding-right: 5px;
+  padding-bottom: 5px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-top: 5px; 
+
  }
 /* star */
 .boton-comun-desktop-1 {
@@ -184,6 +199,50 @@
     display:flex;
 } 
 
+.dropdown{
+    display: inline-block ;
+    position: relative;
+}
+
+ .dropdown button{
+    border:1px solid rgba(27, 31, 35, 0.15);
+    border-radius: 6px;
+    background-color: #FAFBFC;
+    padding: 7px;
+    cursor: pointer;
+ }
+  
+
+  
+.dropdown div{
+    background-color: #fff;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2) ;
+    z-index: 1;
+    visibility: visible;
+    position: absolute;
+    min-width: 100%;
+    opacity: 0;
+    
+}
+
+
+.dropdown:hover div{
+    visibility: hidden;
+    opacity: 1;
+}
+
+ .dropdown div a{
+     display: block;
+     text-decoration: none;
+     padding: 8px;   
+     transition: 1s ;
+     white-space: nowrap;    
+ }
+
+ .dropdown div a:hover{
+     background-color: var(--hover-celeste);
+     
+ }
 
 footer ul li{
     margin: 0 1rem;
