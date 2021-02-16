@@ -84,6 +84,7 @@ box-shadow: none;
     position: absolute;
     right: 2px;
     top: 1px;
+    
   }
 
   .boton{
@@ -96,7 +97,7 @@ box-shadow: none;
     align-items: center;  
     cursor: pointer;
 }
-  
+
   
   .boton-herramientas{
     display: flex;
@@ -151,7 +152,7 @@ box-shadow: none;
    
     /* hovers main primera  seccion */
 
-.boton-repositorio a:hover {
+.boton-repositorio p:hover {
     text-decoration: underline;
     color: var(--hover-celeste) ;   
   }
@@ -163,12 +164,30 @@ box-shadow: none;
  .boton-repositorio {
   display: flex;
   flex-direction: row;
-  margin-left: 1.2rem;
-  margin-bottom: 0.5rem;
-  margin-top: 10px;
+  padding-right: 25px;
+  padding-bottom: 5px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  font-size: 18px;
+  line-height: 10px;
+  color:var(--hover-celeste);
+  
+}
+
+.boton-main{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  margin-top: 5px;
   font-size: 18px;
   line-height: 10px;
 }
+
 /* primera  seccion link de repositorio */
 .boton-repositorio svg{
    filter: none;
@@ -272,13 +291,11 @@ list-style: none;
 
 }
 
-
-
   .usuario-container{
     display: flex;
     flex-direction: row;
-    
-    margin: -1px -1px 0;
+    max-width: 360px;
+    margin: -1px -1px 0 5px;
     padding: 16px;
     justify-content: space-between;
     background-color: #f1f8f1ff ;
@@ -298,8 +315,7 @@ list-style: none;
 
 }
 
-.readme-section{
-  
+.readme-section{ 
   padding: 1rem;
  border-top: 1px solid #e1e4e8;
     border-bottom: 1px solid #e1e4e8;
