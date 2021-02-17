@@ -11,11 +11,12 @@
       height: 100%;
       margin: 0;
       padding: 0;
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
-      
-      background-color: #fff;
-      
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ; 
+      background-color: #fff; 
+      background: var(--color-1);  
   }
+
+  
   
   h1{
     font-size:16px;
@@ -61,7 +62,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 5px;
+    padding: 5px  5px 5px 5px;
     width: 100%;
     height: 64px;
     background-color: var(--header-oscuro);
@@ -238,12 +239,12 @@ background-color: #fafbfc;
 
 /* botones header y herramientas */
 
-.dropdown{
+.dropdown .dropdown-head{
   display: inline-block ;
   position: relative;
 }
 
-.dropdown button{
+.dropdown svg{
   border:1px solid rgba(27, 31, 35, 0.15);
   border-radius: 6px;
   background-color: #FAFBFC;
@@ -299,6 +300,8 @@ background-color: #fafbfc;
   border-color: rgba(27, 31, 35, 0.15) ;
 }
 
+
+/* boton contenido desplegable */
 .watch-content{
   display: none;
   position: absolute;
