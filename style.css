@@ -243,7 +243,7 @@ background-color: #fafbfc;
 
 /* botones header y herramientas */
 
-.dropdown .dropdown-head{
+.dropdown{
   display: inline-block ;
   position: relative;
 }
@@ -436,14 +436,18 @@ padding: 0;
   width:22%;
   margin-right: 3rem;
 }
-footer{
-  
-}
+
 
 footer ul li{
   display: flex;
-  margin-top: 1rem;
-  padding: 20px;
+  justify-content: space-around;
+  margin: 0.3rem;
+  padding: 0.2rem;
   border-top: 1px solid #dadce0;
-  line-height: 21px;
+  list-style: none;
+  font-size: 12px;
+}
+
+footer a{
+  text-decoration: none;
 }
