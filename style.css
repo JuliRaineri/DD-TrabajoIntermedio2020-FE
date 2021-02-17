@@ -1,6 +1,10 @@
 @import "desktop.css";
 
-
+@media (prefers-color-scheme: dark) {
+  :root{
+      --color-1: black;
+  }
+}
 /* Reseteo global */
 *{
     box-sizing: border-box;

@@ -1,9 +1,5 @@
 
-@media (prefers-color-scheme: dark) {
-    :root{
-        --color-1: black;
-    }
-}
+
 
   @media  (min-width: 770px) {
 
