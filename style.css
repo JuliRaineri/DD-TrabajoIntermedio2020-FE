@@ -437,14 +437,19 @@ padding: 0;
   margin-right: 3rem;
 }
 
+footer{
+  position: relative;
+  width: 100%;
+}
 
 footer ul li{
   display: flex;
-  justify-content: space-around;
-  margin: 0.3rem;
-  padding: 0.2rem;
-  border-top: 1px solid #dadce0;
-  list-style: none;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0.2rem;
+    padding: 0.2rem; 
+    font-size: 12px;
   font-size: 12px;
 }
 

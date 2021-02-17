@@ -245,11 +245,39 @@
      
  }
 
-footer ul li{
-    margin: 0 1rem;
-    
+footer{
+    position: relative;
+    width: 100%;
 }
+
+
+ footer ul {
+     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 1rem;
+  padding: 2rem; 
+    font-size: 12px;
   }
+
+  footer li{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+    
+  }
+  
+  footer a{
+    text-decoration: none;
+  }
+
+  footer li svg{
+      position: absolute;
+      filter: invert(70%);
+      left: 645px;
+  }
+}
 
 @media (max-width: 770px){
 
