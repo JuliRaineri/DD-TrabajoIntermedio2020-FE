@@ -12,54 +12,30 @@
       width: 100%;
   }
 
-  header svg{
-      margin-left: 10px;
-      
-  }
-  header{
-      display: flex; 
-      width: 100%;      
-  }
+a{
+    text-decoration: none;
+}
 
   img{
       border-radius: 50%;
   }
- /* search and form */
-.search{
-    display: flex;
-    margin-right: 40px;
-}
-
- input{
-     min-height: 28px;
-     background-color: var(--header-oscuro);
-     color: #ffff;
-     border-radius: 6px;
-     font-size: 16px;
-     padding: 5px 20px;
-     padding-right: 10px;
-     border-width: 1px;
-     line-height: 20px;
-
- }
 
  li{ padding: 5px;
     margin-right: 5px;
 }
 
 .boton-repositorio{
-    font-size: 20px;
+    display: flex;
+    flex-direction: row;   
+    align-self: auto;    
 }
  
- /* herramientas header desktop */
 
- .herramientas{
-     display: flex;
-     justify-content: space-around;  
-     font-weight: 400;
-     font-size: 18px;
-     filter: invert(1);
- }
+.boton-repositorio p{
+    font-size: 20px;
+
+}
+ 
 
  .boton-herramientas-desktop{
      display: flex;
@@ -67,7 +43,8 @@
      justify-content: space-between;
      padding: 12px 24px 0 24px;
      background-color: #fafbfc;
-     box-shadow: inset 0 -1px 0 #eaecef;
+     position: absolute;
+     top: -40px;
  }
 
  .boton-herramientas-desktop span{
@@ -78,31 +55,34 @@
      margin-top: -35px;
  }
 
- .herramientas .hide-mobile{
-     margin-left: 10px;
- }
+
  .boton-desplegable{
      display: flex;
-     justify-content: flex-end;
+     justify-content: center;
+     padding-right: 230px;
      width: 100%;
  }
 
-.tools-desktop{
-    position: absolute;
-    bottom: 272px;
-    right: 400px;
-}
 
+
+.desktop-tools{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 25px;
+}
 
  .code{
      background-color: #2EA44F;
      color: #ffff;
  }
 
+ 
+
  .boton-main-desktop{
     position: absolute;
     left: 160px;
-    bottom: 276px;
+    top: 200px;
  }
 
  .boton-main{
@@ -113,6 +93,25 @@
   margin-top: 5px; 
 
  }
+
+  .counter{
+      position: absolute;
+    
+    width: 24px;
+    height: 28px;
+    border:  solid 1px #babdc0 ;
+    border-radius: 4px;
+    border-left: none;
+    right: 35px;
+    top: 89px;
+    border-radius: 8px;
+    padding: 4px 16px 0 2px;
+    text-align: center;  
+  }
+  
+  .counter:hover a{
+    color: var(--hover-celeste) ;  
+  }
 /* star */
 .boton-comun-desktop-1 {
     position: absolute;
@@ -135,7 +134,7 @@
 
 /* fork */
 
-.boton-comun-desktop-3 {
+.boton-comun-desktop-3  {
     position: absolute;
     right: 35px;
     top: 90px;
@@ -192,91 +191,7 @@
     
 }
 
-  .about-desktop{
-      padding-right: 1rem;
-  }
 
-.octicon-footer{
-    display:flex;
-} 
-
-.dropdown{
-    display: inline-block ;
-    position: relative;
-}
-
- .dropdown button{
-    border:1px solid rgba(27, 31, 35, 0.15);
-    border-radius: 6px;
-    background-color: #FAFBFC;
-    padding: 7px;
-    cursor: pointer;
- }
-  
-
-  
-.dropdown div{
-    background-color: #fff;
-    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2) ;
-    z-index: 1;
-    visibility: visible;
-    position: absolute;
-    min-width: 100%;
-    opacity: 0;
-    
-}
-
-
-.dropdown:hover div{
-    visibility: hidden;
-    opacity: 1;
-}
-
- .dropdown div a{
-     display: block;
-     text-decoration: none;
-     padding: 8px;   
-     transition: 1s ;
-     white-space: nowrap;    
- }
-
- .dropdown div a:hover{
-     background-color: var(--hover-celeste);
-     
- }
-
-footer{
-    position: relative;
-    width: 100%;
-}
-
-
- footer ul {
-     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin: 1rem;
-  padding: 2rem; 
-    font-size: 12px;
-  }
-
-  footer li{
-    display: flex;
-    justify-content: space-between;
-    margin: 1rem;
-    
-  }
-  
-  footer a{
-    text-decoration: none;
-  }
-
-  footer li svg{
-      position: absolute;
-      filter: invert(70%);
-      left: 645px;
-  }
 }
 
 @media (max-width: 770px){
@@ -287,5 +202,6 @@ footer{
     .hide-mobile{
         display: none;
     }
+    
     
 }

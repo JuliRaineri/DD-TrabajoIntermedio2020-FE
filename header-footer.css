@@ -1,0 +1,150 @@
+@media  (min-width: 770px) {
+
+    .hide-desktop{
+        display: none;
+    }
+   
+    .show-only-desktop{
+        display: block;
+        width: 100%;
+    }
+
+    header{  
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    width: 100%;
+    height: 64px;
+    background-color: var(--header-oscuro);
+    
+      }
+ .header-container{
+   position: relative;
+ }
+
+ .header-container .logo{
+   position: absolute;
+   left: 20px;
+ }
+ .header-container form {
+   position: absolute;
+   left: 80px;
+ }
+    .header-container ul{
+      position: absolute;
+   left: 365px;
+   
+    }  
+    
+       /* search and form */
+      
+      .search-desktop{
+      position:relative;
+      width: 20%;   
+      margin: 1px;
+      background: none;
+      border-radius: 6px;
+        }
+
+        
+  .search-desktop img{
+    position: absolute;
+    right: 5px;
+    top: 1px;  
+  }
+
+ input{
+     min-height: 28px;
+     background-color: var(--header-oscuro);
+     color: #ffff;
+     border-radius: 6px;
+     font-size: 14px;
+     padding: 5px 20px;
+     padding-right: 10px;
+     border-width: 1px;
+     line-height: 20px;
+ }
+
+ /* herramientas header desktop */
+
+.header-tools-desktop a{
+    display: flex; 
+    justify-content: space-around; 
+    width: 60px;
+    font-weight: 400;
+    font-size: 16px;
+    filter: invert(1);
+    color: black;    
+}
+
+.tools-desktop{
+  display: flex;
+  justify-content: space-around; 
+align-items: center;
+    margin-right: 10px;
+}
+
+.octicon-footer{
+    display:flex;
+} 
+ 
+footer{
+    display: flex;
+    flex-direction: row;
+    line-height: 20px;
+    font-size: 12px;
+    margin: 1.5rem 1.5rem;    
+    justify-content: center;
+}
+
+
+ footer ul {  
+    margin: 3rem; 
+  }
+
+  footer ul li{  
+    padding: 1.3rem; 
+  }
+
+  footer li a{
+    color: #3666d6;
+  }
+
+  footer li a:hover{
+      text-decoration: underline;
+  }
+  
+  footer li svg{   
+      margin: 3.5rem;
+      filter: invert(70%);      
+  }
+}
+
+@media (max-width: 770px){
+
+    .show-only-mobile{
+        display: block;
+    }
+    .hide-mobile{
+        display: none;
+    }
+    
+    footer{
+        display: flex;   
+        justify-content: center;
+        flex-wrap: wrap;
+        line-height: 20px;
+        font-size: 12px;
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 0 20px 0 20px;     
+      }
+ 
+      footer ul li{  
+        padding: 10px; 
+      }
+      
+      footer li a{
+        color: #3666d6;
+      }
+}
